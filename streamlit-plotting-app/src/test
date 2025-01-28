@@ -1,0 +1,17 @@
+from utils.parser import parse_user_input
+def test_parser_outputs():
+    test_inputs = [
+        "Plot sine from -5 to 5",
+        "Show me x squared",
+        "Plot cosine between -10 and 10",
+        "goodbye"
+    ]
+    
+    for input_text in test_inputs:
+        result = parse_user_input(input_text)
+        print(f"Input: {input_text}")
+        print(f"Output: {result}\n")
+
+print("Running test_parser_outputs")
+test_parser_outputs()
+
